@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.block {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+button {
+  height: 25px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px dotted #444443;
+  display: flex;
+  background-color: white;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 35px;
+  margin: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#moon-icon {
+  color: #444443;
+  height: 25px;
+  width: 25px;
+}
+
+.card {
+  border-radius: 10px;
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Queries:
+  320px — 480px: Mobile devices
+  481px — 768px: iPads, Tablets
+  769px — 1024px: Small screens, laptops
+  1025px — 1200px: Desktops, large screens
+  1201px and more —  Extra large screens, TV
+*/
+
+/* 320px — 480px: Mobile devices */
+@media only screen and (max-width: 480px) {
+  
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* 769px — 1024px: Small screens, laptops */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* 1201px and more —  Extra large screens, TV */
+@media only screen and (min-width: 1201px) {
+  
 }
